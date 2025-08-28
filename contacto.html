@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | Trend is Alive</title>
+    <link rel="stylesheet" href="contacto.html">
+    <link rel="stylesheet" href="Estilos.css/Style.css">
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefdfc;
+    color: #444;
+  }
+
+  header {
+    background-color: #1e1e1e;
+    color: #ff7043;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .contenido {
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+
+  .contenido h2 {
+    color: #e64a19;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #e64a19;
+    outline: none;
+  }
+
+  button {
+    background-color: #e64a19;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  button:hover {
+    background-color: #d84315;
+  }
+
+  footer {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* MEDIA QUERIES */
+
+  /* Tablets */
+  @media (max-width: 900px) {
+    .contenido {
+      padding: 40px 15px;
+      font-size: 1rem;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+
+  /* Móviles */
+  @media (max-width: 600px) {
+    .contenido {
+      padding: 30px 10px;
+      font-size: 0.95rem;
+    }
+
+    .contenido h2 {
+      font-size: 1.5rem;
+    }
+
+    input,
+    textarea {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+
+    button {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+</style>
+<body>
+    <header>
+        <h1>Trend is Alive</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="quienes somos.html">Quiénes Somos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <h2>Nuestro Contacto</h2>
+        <p>¿Queres pedir una remera? ¿O queres hacer un pedido personalizado? Escanea el QR asi nos podemos poner en
+            contacto.</p>
+
+
+
+        </form>
+    </section>
+    <div class="container"><img src="img/0e1bff58-b3ff-4fe6-ac92-f3fd1e056410 (1).jpg" alt="QR" width="250"></div>
+
+    <footer>
+        <p>2025 Trend is Alive</p>
+    </footer>
+
+</body>
+
+</html>
