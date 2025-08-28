@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio | Trend is Alive</title>
+    <link rel="stylesheet" href="Estilos.css/Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf9;
+  color: #333;
+}
+
+header {
+  background-color: #1e1e1e;
+  color: #ffcc00;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  background: linear-gradient(135deg, #ffcc00, #ff6f00);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.contenido {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* 🔽 MEDIA QUERIES para pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .banner h2 {
+    font-size: 1.6rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .contenido {
+    font-size: 1rem;
+    padding: 30px 15px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h2 {
+    font-size: 1.3rem;
+  }
+
+  .banner p {
+    font-size: 0.95rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}
+</style>
+
+<body>
+    <header>
+        <h1>Trend is Alive</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="quienes somos.html">Quiénes Somos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Estampa tu estilo con actitud</h2>
+        <p>Remeras diseñadas por estudiantes con mucha onda y personalidad.</p>
+    </section>
+
+    <section class="contenido">
+        <p>Bienvenidos a <strong>Trend is Alive</strong>, nuestro emprendimiento escolar. Somos estudiantes de 6to año
+            que decidimos emprender con remeras estampadas. Acá vas a encontrar diseños hechos por nosotros, con personalización y arte.</p>
+    </section>
+
+    <footer>
+        <p>2025 Trend is Alive</p>
+    </footer>
+</body>
+
+</html>

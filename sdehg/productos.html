@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Productos | Trend is Alive</title>
+    <link rel="stylesheet" href="productos.html">
+    <link rel="stylesheet" href="Estilos.css/Style.css">
+</head>
+<style>
+  body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fafafa;
+      color: #222;
+  }
+
+  header {
+      background-color: #1e1e1e;
+      color: #4caf50;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+  }
+
+  nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  nav a:hover {
+      text-decoration: underline;
+  }
+
+  .contenido {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+  }
+
+  .contenido h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+  }
+
+  .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+  }
+
+  .producto {
+      background-color: white;
+      border: 2px solid #a5d6a7;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .producto img {
+      width: 100%;
+      border-radius: 6px;
+  }
+
+  .producto h3 {
+      margin: 10px 0;
+      color: #333;
+  }
+
+  .producto p {
+      color: #666;
+      margin-bottom: 10px;
+  }
+
+  .producto .precio {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2e7d32;
+  }
+
+  .producto button {
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .producto button:hover {
+      background-color: #2e7d32;
+  }
+
+  footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  /* MEDIA QUERIES */
+
+  /* Tablets */
+  @media (max-width: 900px) {
+      .contenido {
+          padding: 30px 20px;
+      }
+
+      .productos {
+          grid-template-columns: repeat(2, 1fr);
+      }
+
+      header {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+
+      nav {
+          justify-content: center;
+          margin-top: 10px;
+      }
+  }
+
+  /* Teléfonos móviles */
+  @media (max-width: 600px) {
+      .contenido {
+          padding: 20px 10px;
+      }
+
+      .productos {
+          grid-template-columns: 1fr;
+      }
+
+      header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+
+      nav {
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+      }
+
+      .contenido h2 {
+          font-size: 1.5rem;
+      }
+  }
+</style>
+<body>
+    <header>
+        <h1>Trend is Alive</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="quienes somos.html">Quiénes Somos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="contenido">
+        <h2>Nuestras Remeras</h2>
+        <div class="productos">
+            <section class="productos">
+                <div class="producto"> <img src="img/descarga.jpg" alt="Producto 1">
+                    <h3>Remera negra</h3>
+                    <p>Remera de color negro liso, ideal para looks minimalistas o para estampar con diseños únicos. Clásica, combinable y versátil.</p>
+                    <div class="precio">$4999.99</div>
+                </div>
+                <div class="producto"> <img src="img/descarga (3).jpg" alt="Producto 2">
+                    <h3>Remera gris</h3>
+                    <p>Remera gris con efecto lavado, de estilo urbano y relajado. Perfecta para un look moderno y canchero.</p>
+                    <div class="precio">$2999.99</div>
+                </div>
+                <div class="producto"> <img src="img/descarga (2).jpg" alt="Producto 3">
+                    <h3>Remera azul marino</h3>
+                    <p>Remera azul oscura de corte clásico. Una opción cómoda para todos los días, fácil de combinar con cualquier outfit.</p>
+                    <div class="precio">$3999.99</div>
+                </div>
+                <div class="producto"> <img src="img/descarga (1).jpg" alt="Producto 4">
+                    <h3>Remera gris oscuro</h3>
+                    <p>Remera gris oscuro lisa, con un toque sobrio y moderno. Ideal para usar sola o como base para estampas creativas.</p>
+                    <div class="precio">$5999.99</div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <p>2025 Trend is Alive</p>
+    </footer>
+</body>
+
+</html>
